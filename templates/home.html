@@ -7,47 +7,41 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+h1 {text-align: center;}
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 .w3-myfont {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 </style>
-<div class="'w3-top" w3-black w3-card>
-<!--  <a href="" class="w3-bar-item w3-button w3-padding-large">LibManage</a>-->
-  <img src="logo.jpeg" class="w3-round " alt="Logo" style="width:60%">
 
-  <button<a class="w3-bar-item w3-button w3-hover-red w3-padding-large w3-hide-small w3-right"  href="login" style="color:dodgerblue" onclick="document.getElementById('login').style.display='block'">Login /<a class="w3-bar-item w3-button w3-hover-red w3-padding-large w3-hide-small "  href="signup"  onclick="document.getElementById('signup').style.display='block'">Sign up</button>
+<body background="purple">
+
+<!--Header-->
+<div class="'w3-top w3-bar " style="float: top;">
+  <h1><img src="https://i.imgur.com/Wq4LUAs.png" href="" class="w3-button  w3-left" alt="Logo" style="width:20%"><a style="margin-right:250px">Library Management</a></h1>
+<button class="w3-button w3-margin-bottom w3-hide-small w3-right"  href="signup"  style="font-size:18px  color:purple" onclick="document.getElementById('signup').style.display='block'">Sign up</button>
+    <button  href="login" class="w3-button w3-margin-bottom w3-hide-small w3-right"   style="font-size:18px color:purple"  onclick="document.getElementById('login').style.display='block'">Login</button>
 </div>
+
 <!-- Navbar -->
 <div>
   <div class="w3-bar w3-purple w3-card " >
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="" class="w3-bar-item w3-button w3-col m2">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button  w3-hide-small w3-col m2">BOOKS</a>
-    <a href="#band" class="w3-bar-item w3-button w3-col m2  w3-hide-small">JOURNAL</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-col m2 w3-hide-small">DIGITAL</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-col m2 w3-hide-small ">ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-col m2 w3-hide-small ">FAQ</a>
-  </div>
-  <div class=style="background-color:black;">
-    <div class="w3-dropdown-hover  w3-hide-small w3-left" >
-      <button class="w3-padding-large w3-button " title="More">CATALOGUE <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Books</a>
-        <a href="extras" class="w3-bar-item w3-button">Journals</a>
-        <a href="#" class="w3-bar-item w3-button">Projects</a>
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-grey w3-hide-small w3-col m6 " ><i class="fa fa-search"></i></a
-          <input type="text" placeholder="Search..">
+    <a href="" class="w3-bar-item w3-button ">HOME</a>
+    <a href="books" class="w3-bar-item w3-button  w3-hide-small ">BOOKS</a>
+    <a href="journal" class="w3-bar-item w3-button  w3-hide-small">JOURNAL</a>
+    <a href="digital" class="w3-bar-item w3-button  w3-hide-small">DIGITAL</a>
+    <a href="about" class="w3-bar-item w3-button  w3-hide-small ">ABOUT</a>
+    <a href="faq" class="w3-bar-item w3-button  w3-hide-small ">FAQ</a>
+    <label class="w3-button fa fa-shopping-cart w3-right w3-margin-right " style="font-size:28px"></label>
   </div>
 </div>
 
 
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:450px">
   <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
   <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
@@ -99,10 +93,10 @@ body {font-family: "Lato", sans-serif}
    <!-- The Login Section -->
   <div id="login" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-black w3-center w3-padding-32">
+      <header class="w3-container w3-purple w3-center w3-padding-32">
         <span onclick="document.getElementById('login').style.display='none'"
-       class="w3-button w3-black w3-xlarge w3-display-topright w3-hover-red">×</span>
-        <h2 class="w3-wide"><i class="w3-margin-centr"></i>LOGIN</h2>
+       class="w3-button w3-grey w3-xlarge w3-display-topright w3-hover-black">×</span>
+        <h2 class="w3-wide"><i class="w3-margin-center"></i>LOGIN</h2>
       </header>
       <div class="w3-container">
         <p><label><i class="w3-wide"></i>Enter the details</label></p>
@@ -112,7 +106,7 @@ body {font-family: "Lato", sans-serif}
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
         </label>
 <!--        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
-        <button class="w3-button w3-block w3-black w3-padding-16 w3-section w3-right">LOGIN<i class="fa fa-check"></i></button>
+        <button class="w3-button w3-block w3-purple w3-padding-16 w3-section w3-right">LOGIN</button>
       </div>
     </div>
   </div>
@@ -121,9 +115,9 @@ body {font-family: "Lato", sans-serif}
   <!-- The Sign up Section -->
   <div id="signup" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-black w3-center w3-padding-32">
+      <header class="w3-container w3-purple w3-center w3-padding-32">
         <span onclick="document.getElementById('signup').style.display='none'"
-       class="w3-button w3-black w3-xlarge w3-display-topright w3-hover-red">×</span>
+       class="w3-button w3-grey w3-xlarge w3-display-topright w3-hover-red">×</span>
         <h2 class="w3-wide"><i class="w3-margin-centr"></i>Sign Up</h2>
       </header>
       <div class="w3-container">
@@ -135,7 +129,7 @@ body {font-family: "Lato", sans-serif}
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
         </label>
         <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-        <button class="w3-button w3-block w3-black w3-padding-16 w3-section w3-right">REGISTER<i class="fa fa-check"></i></button>
+        <button class="w3-button w3-block w3-purple w3-padding-16 w3-section w3-right">REGISTER<i class="fa fa-check"></i></button>
       </div>
     </div>
   </div>
