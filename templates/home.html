@@ -7,21 +7,25 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-h1 {text-align: center;}
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 .w3-myfont {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
+.w3-new{
+  font-family: "Playfair Display";
+}
+
+
+
 </style>
-
-<body background="purple">
-
+<body style="background-color:LightGray;">
 <!--Header-->
 <div class="'w3-top w3-bar " style="float: top;">
-  <h1><img src="https://i.imgur.com/Wq4LUAs.png" href="" class="w3-button  w3-left" alt="Logo" style="width:20%"><a style="margin-right:250px">Library Management</a></h1>
-<button class="w3-button w3-margin-bottom w3-hide-small w3-right"  href="signup"  style="font-size:18px  color:purple" onclick="document.getElementById('signup').style.display='block'">Sign up</button>
-    <button  href="login" class="w3-button w3-margin-bottom w3-hide-small w3-right"   style="font-size:18px color:purple"  onclick="document.getElementById('login').style.display='block'">Login</button>
+  <img src="https://i.imgur.com/Wq4LUAs.png" href="" class="w3-button  w3-left" alt="Logo" style="width:20%"><a style="margin-right:250px"><a class="w3-xxxlarge w3-new"> Central Library</a></a>
+
+    <button class="w3-button w3-margin-bottom w3-hide-small w3-right w3-large"  href="signup"  style="font-size:24px  color:purple" onclick="document.getElementById('signup').style.display='block'">Sign up</button>
+    <button  href="login" class="w3-button w3-margin-bottom w3-hide-small w3-right w3-large"   style="font-size:18px color:purple"  onclick="document.getElementById('login').style.display='block'">Login</button>
 </div>
 
 <!-- Navbar -->
@@ -41,31 +45,29 @@ body {font-family: "Lato", sans-serif}
 
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:450px">
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
   <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-
 </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
+
     <!--search-->
     <form class="w3-panel w3-margin-top" action="/action_page.php">
-        <div class="w3-dropdown-hover w3-hide-small w3-purple w3-margin-top">
-            <button class="w3-round-large w3-btn" title="Catalog">Library Catalog <i class="fa fa-caret-down"></i></button>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="#" class="w3-bar-item w3-button">Title</a>
-                <a href="#" class="w3-bar-item w3-button">Author</a>
-                <a href="#" class="w3-bar-item w3-button">Subject</a>
-                <a href="#" class="w3-bar-item w3-button">ISBN</a>
-                <a href="#" class="w3-bar-item w3-button">Series</a>
-            </div>
+        <div class="w3-dropdown-hover w3-padding w3-purple w3-margin-top">
+            <select id="select" class="w3-purple w3-border-purple">
+              <option value="0">Title</option>
+              <option value="1">Author</option>
+              <option value="2">Publication House</option>
+              <option value="3">ISBN</option>
+            </select>
         </div>
-        <input class="w3-padding w3-margin-top" type="text" placeholder="Search.." name="search" style="width:50%">
-        <button class="w3-padding w3-purple" type="submit"><i class="fa fa-search"></i></button>
+        <input class="w3-padding w3-margin-top" type="text" placeholder="Search for title, author, publication or ISBN" name="search" style="width:50%">
+        <button class="w3-padding w3-purple w3-border-purple" type="submit"><i class="fa fa-search"></i></button>
     </form>
 
   <!--Image and descriptions-->
@@ -74,15 +76,15 @@ body {font-family: "Lato", sans-serif}
     	<div class="w3-half w3-card-4">
           <img src="https://www.iiitp.ac.in/sites/default/files/inline-images/libary_0.jpg" style="width:120%">
         </div>
-        <div class="w3-half w3-topbar w3-border-deep-purple w3-sand w3-panel w3-round-xlarge w3-padding">
-        	<h2 class="w3-wide w3-myfont"><b>Library perspectives:</b></h2>
-      		<p class="w3-justify w3-medium">Indian Institute of Information Technology Pune (IIITPune) Library started with the institution in 2016. It has developed with academic collection with huge number of titles and volumes, journals and magazines both in printed version and electronic format. Presently Library has more than 3200 books with 403 titles in two branches of engineering i.e. Electronics & Communication Engineering and , Computer Science Engineering, , at UG, level.<br><br>Library has institutional membership of two renowned online databases, i.e. World e-book library and South Asian Achieve. These online databases make the library competent to learning enthusiasm, higher studies and research of students and faculty members.<br><br>The library is spacious and divided into different sections to facilitate proper utilization of available resources. Library has been automated with I SLIM software and providing good number of services like book search, reservation, renewal and account checking details through Web OPAC. All the available books and magazines are classified by DDC – 23nd edition, and enabled bar-coded circulation services. The library is taking constant efforts to provide relevant resources to its users by using different technologies.</p>
+        <div class="w3-half w3-topbar w3-border-purple w3-sand w3-panel w3-round-xlarge w3-padding">
+        	<h2 class="w3-new"><b>Library perspectives:</b></h2>
+      		<p class="w3-justify w3-new w3-medium">Indian Institute of Information Technology Pune (IIITPune) Library started with the institution in 2016. It has developed with academic collection with huge number of titles and volumes, journals and magazines both in printed version and electronic format. Presently Library has more than 3200 books with 403 titles in two branches of engineering i.e. Electronics & Communication Engineering and , Computer Science Engineering, , at UG, level.<br><br>Library has institutional membership of two renowned online databases, i.e. World e-book library and South Asian Achieve. These online databases make the library competent to learning enthusiasm, higher studies and research of students and faculty members.<br><br>The library is spacious and divided into different sections to facilitate proper utilization of available resources. Library has been automated with I SLIM software and providing good number of services like book search, reservation, renewal and account checking details through Web OPAC. All the available books and magazines are classified by DDC – 23nd edition, and enabled bar-coded circulation services. The library is taking constant efforts to provide relevant resources to its users by using different technologies.</p>
   		</div>
       </div>
       <div class="w3-row w3-padding-32">
-    		<div class="w3-half w3-topbar w3-border-deep-purple w3-sand w3-panel w3-round-xlarge w3-padding">
-          		<h2 class="w3-wide w3-myfont"><b>Library perspectives:</b></h2>
-      			<p class="w3-justify w3-medium">Indian Institute of Information Technology Pune (IIITPune) Library started with the institution in 2016. It has developed with academic collection with huge number of titles and volumes, journals and magazines both in printed version and electronic format. Presently Library has more than 3200 books with 403 titles in two branches of engineering i.e. Electronics & Communication Engineering and , Computer Science Engineering, , at UG, level.<br><br>Library has institutional membership of two renowned online databases, i.e. World e-book library and South Asian Achieve. These online databases make the library competent to learning enthusiasm, higher studies and research of students and faculty members.<br><br>The library is spacious and divided into different sections to facilitate proper utilization of available resources. Library has been automated with I SLIM software and providing good number of services like book search, reservation, renewal and account checking details through Web OPAC. All the available books and magazines are classified by DDC – 23nd edition, and enabled bar-coded circulation services. The library is taking constant efforts to provide relevant resources to its users by using different technologies.</p>
+    		<div class="w3-half w3-topbar w3-border-purple w3-sand w3-panel w3-round-xlarge w3-padding">
+          		<h2 class="w3-new"><b>Library perspectives:</b></h2>
+      			<p class="w3-justify w3-new w3-medium">Indian Institute of Information Technology Pune (IIITPune) Library started with the institution in 2016. It has developed with academic collection with huge number of titles and volumes, journals and magazines both in printed version and electronic format. Presently Library has more than 3200 books with 403 titles in two branches of engineering i.e. Electronics & Communication Engineering and , Computer Science Engineering, , at UG, level.<br><br>Library has institutional membership of two renowned online databases, i.e. World e-book library and South Asian Achieve. These online databases make the library competent to learning enthusiasm, higher studies and research of students and faculty members.<br><br>The library is spacious and divided into different sections to facilitate proper utilization of available resources. Library has been automated with I SLIM software and providing good number of services like book search, reservation, renewal and account checking details through Web OPAC. All the available books and magazines are classified by DDC – 23nd edition, and enabled bar-coded circulation services. The library is taking constant efforts to provide relevant resources to its users by using different technologies.</p>
         	</div>
         	<div class="w3-half w3-card-4">
         		<img src="https://www.iiitp.ac.in/sites/default/files/inline-images/libary-2.jpg" style="width:110%">
@@ -93,10 +95,10 @@ body {font-family: "Lato", sans-serif}
    <!-- The Login Section -->
   <div id="login" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-purple w3-center w3-padding-32">
+      <header class="w3-container w3-black w3-center w3-padding-32">
         <span onclick="document.getElementById('login').style.display='none'"
-       class="w3-button w3-grey w3-xlarge w3-display-topright w3-hover-black">×</span>
-        <h2 class="w3-wide"><i class="w3-margin-center"></i>LOGIN</h2>
+       class="w3-button w3-black w3-xlarge w3-display-topright w3-hover-red">×</span>
+        <h2 class="w3-wide"><i class="w3-margin-centr"></i>LOGIN</h2>
       </header>
       <div class="w3-container">
         <p><label><i class="w3-wide"></i>Enter the details</label></p>
@@ -106,7 +108,7 @@ body {font-family: "Lato", sans-serif}
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
         </label>
 <!--        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
-        <button class="w3-button w3-block w3-purple w3-padding-16 w3-section w3-right">LOGIN</button>
+        <button class="w3-button w3-block w3-black w3-padding-16 w3-section w3-right">LOGIN<i class="fa fa-check"></i></button>
       </div>
     </div>
   </div>
@@ -115,9 +117,9 @@ body {font-family: "Lato", sans-serif}
   <!-- The Sign up Section -->
   <div id="signup" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-purple w3-center w3-padding-32">
+      <header class="w3-container w3-black w3-center w3-padding-32">
         <span onclick="document.getElementById('signup').style.display='none'"
-       class="w3-button w3-grey w3-xlarge w3-display-topright w3-hover-red">×</span>
+       class="w3-button w3-black w3-xlarge w3-display-topright w3-hover-red">×</span>
         <h2 class="w3-wide"><i class="w3-margin-centr"></i>Sign Up</h2>
       </header>
       <div class="w3-container">
@@ -129,7 +131,7 @@ body {font-family: "Lato", sans-serif}
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
         </label>
         <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-        <button class="w3-button w3-block w3-purple w3-padding-16 w3-section w3-right">REGISTER<i class="fa fa-check"></i></button>
+        <button class="w3-button w3-block w3-black w3-padding-16 w3-section w3-right">REGISTER<i class="fa fa-check"></i></button>
       </div>
     </div>
   </div>
@@ -138,42 +140,34 @@ body {font-family: "Lato", sans-serif}
 
 
   <!-- The Contact Section -->
-  <div class="w3-container w3-card w3-black " style="width:100%" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large ">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
+  <div class="w3-container w3-card-4 w3-centre w3-purple" style="width:100%" id="contact">
+    <p class="w3-opacity w3-center"><i>Book not available?</i></p>
+    <h2 class="w3-wide w3-center">REQUEST HERE</h2>
         <form action="/action_page.php" target="_blank">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
+            <div class="w3-third">
               <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
             </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            <div class="w3-third">
+              <input class="w3-input w3-border" type="text" placeholder="Author" required name="Name">
+            </div>
+            <div class="w3-third">
+              <input class="w3-input w3-border" type="text" placeholder="Publication" required name="Name">
             </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+
+          <button class="w3-button w3-hover-deep-purple w3-section w3-right" type="submit">SEND</button>
         </form>
-      </div>
-    </div>
   </div>
 <!-- End Page Content -->
 </div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <a href="https://www.facebook.com/profile.php?id=100009840944314" class="fa fa-facebook-official w3-hover-opacity"></a>
+  <a href="https://www.instagram.com/lady_of_her_principles/" class="fa fa-instagram w3-hover-opacity"></a>
+  <a href="https://www.linkedin.com/in/minakshi-b-1b9420b1/" class="fa fa-linkedin w3-hover-opacity"></a>
+  <a href="https://github.com/MinakshiReddy" class="fa fa-github w3-hover-opacity"></a>
   <p class="w3-medium">Powered by <a href="https://github.com/MinakshiReddy/FlaskApp" target="_blank">Meenjas</a></p>
 </footer>
 
@@ -204,17 +198,9 @@ function myFunction() {
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 // Get the modal
-var modal = document.getElementById('id01');
-
+var modal = document.getElementById('login');
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
