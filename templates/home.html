@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +16,7 @@ body {font-family: "Lato", sans-serif}
 .w3-new{
   font-family: "Playfair Display";
 }
-.main { margin-left: 40px;/* Same as the width of the sidenav */ }
+.main { margin-left: 60px;/* Same as the width of the sidenav */ }
 
 .bar1, .bar2, .bar3
 {
@@ -27,11 +28,8 @@ body {font-family: "Lato", sans-serif}
   transition: 0.4s;
 }
 
-
-
 .change .bar1 {
   transform: rotate(-405deg) translate(-6.2px, 6.2px);
-
 }
 
 .change .bar2 {opacity: 0;transition:0.4s;}
@@ -41,12 +39,12 @@ body {font-family: "Lato", sans-serif}
 }
 .sidenav-always {
   height: 100%;
-  width: 40px;
+  width: 60px;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   left: 0;
-  background-color: Salmon;
+  background-color: Teal ;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 0px;
@@ -60,8 +58,9 @@ body {font-family: "Lato", sans-serif}
   margin-left: 50px;
 }
 
+
 .vertical-center {
-  margin: 5px;
+  margin: 15px;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -70,15 +69,14 @@ body {font-family: "Lato", sans-serif}
 
 .sidenav {
   height: 100%;
-  width: 0px;
+  width: 230px;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
-  background-color: #a385bd;
+  left: -200px;
+  background-color:IndianRed;
   overflow-x: hidden;
   padding-top: 0px;
-  margin-left:40px;
   transition: 0.5s;
 }
 
@@ -99,8 +97,8 @@ body {font-family: "Lato", sans-serif}
   .sidenav a {font-size: 18px;}
 }
 </style>
-
-<body style="background-color:LightGray;">
+</head>
+<body style="background-color:LightGrey">
 
 <div class="main">
 <!--Header-->
@@ -113,22 +111,13 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar -->
 <div>
-  <div class="w3-bar w3-purple w3-card " >
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="" class="w3-bar-item w3-button ">HOME</a>
-    <a href="books" class="w3-bar-item w3-button  w3-hide-small ">BOOKS</a>
-    <a href="journal" class="w3-bar-item w3-button  w3-hide-small">JOURNAL</a>
-    <a href="digital" class="w3-bar-item w3-button  w3-hide-small">DIGITAL</a>
-    <a href="about" class="w3-bar-item w3-button  w3-hide-small ">ABOUT</a>
-    <a href="faq" class="w3-bar-item w3-button  w3-hide-small ">FAQ</a>
-    <label class="w3-button fa fa-shopping-cart w3-right w3-margin-right " style="font-size:28px"></label>
-  </div>
+
 </div>
 
-<div class="sidenav-always">
+<div class="sidenav-always" >
   <div class="vertical-center" >
-	<a class= "fa fa-home w3-hover-opacity w3-margin-bottom" style="font-size:30px;color:white"></a>
-  	<div id="myBtn" class="w3-hover-opacity container" onclick="openNav(this)">
+	<a class= "fa fa-home w3-hover-opacity w3-margin-bottom" style="font-size:30px;color:white;"></a>
+  	<div id="myBtn" class="w3-hover-opacity container " onclick="openNav(this)">
   		<div class="bar1"></div>
   		<div class="bar2"></div>
   		<div class="bar3"></div>
@@ -138,7 +127,7 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 
-<div  id="my" class="sidenav" style="border: 2px solid Violet;">
+<div  id="my" class="sidenav">
   <div class="vertical-center" style="text-align:center;" >
   <a href="#">About <label class="w3-right">&#10173;</label></a>
   <hr>
@@ -264,16 +253,27 @@ document.getElementById("myBtn").addEventListener("click", open_close);
 
 var menuState = 0 // close
 function open_close(x) {
+
   if(menuState === 0){
      menuState = 1;
-     document.getElementById("my").style.width = "200px";
+     	var step=260;
+          var x=document.getElementById('my').offsetLeft;
+      x= x+ step;
+      document.getElementById('my').style.left= x + "px";
      document.getElementById("myBtn").classList.toggle("change");
   }
   else {
      menuState = 0;
-     document.getElementById("my").style.width = "0";
+     	var step=260;
+        var x=document.getElementById('my').offsetLeft;
+      x= x - step;
+      document.getElementById('my').style.left= x + "px";
      document.getElementById("myBtn").classList.toggle("change");
   }
+}
+
+function move_img() {
+
 }
 
 // Automatic Slideshow - change image every 4 seconds
