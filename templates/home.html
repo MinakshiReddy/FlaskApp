@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -92,28 +93,38 @@ body {font-family: "Lato", sans-serif}
   color: #f1f1f1;
 }
 
+img.two {
+  height: 50%;
+  width: 50%;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 </style>
 </head>
+
 <body style="background-color:LightGrey">
-
 <div class="main">
-<!--Header-->
-<div class="'w3-top w3-bar " style="float: top;">
-  <img src="https://i.imgur.com/Wq4LUAs.png" href="/" class="w3-button  w3-left" alt="Logo" style="width:20%"><a style="margin-right:250px"><a class="w3-xxxlarge w3-new"> Central Library</a></a>
 
-    <button class="w3-button w3-margin-bottom w3-hide-small w3-right w3-large"  href="signup"  style="font-size:24px  color:purple" onclick="document.getElementById('signup').style.display='block'">Sign up</button>
-    <button  href="login" class="w3-button w3-margin-bottom w3-hide-small w3-right w3-large"   style="font-size:18px color:purple"  onclick="document.getElementById('login').style.display='block'">Login</button>
-</div>
+<!-- header small screen-->
+<header class="w3-bar two w3-hide-large w3-hide-medium w3-metro-purple">
+  <img src="https://i.imgur.com/Wq4LUAs.png" href="/" class="w3-button w3-center w3-left" alt="Logo" width="130" height="60">
+  <p class="w3-margin-right w3-right w3-large fa fa-user w3-hover-opacity" style="cursor:pointer" onclick="showBox('login')"></p>
+</header>
 
-<!-- Navbar -->
-<div>
+<!-- Top header -->
+  <header class="w3-bar w3-padding-16 w3-center w3-hide-small w3-metro-purple">
+  	<img src="https://i.imgur.com/Wq4LUAs.png" href="/" class="w3-button w3-left" alt="Logo" width="auto" height="64">
+    <a class="w3-xxlarge">Central Library</a>
+    <p class="w3-right">
+    	<a class="w3-large w3-margin-right w3-hover-opacity" style="cursor:pointer" onclick="showBox('login')">Login</a>
+    </p>
+  </header>
 
-</div>
 
+<!-- Side Navbar -->
 <div class="sidenav-always" >
   <div class="vertical-center" >
 	<a class= "fa fa-home w3-hover-opacity w3-margin-bottom" style="font-size:30px;color:white;"></a>
@@ -125,7 +136,6 @@ body {font-family: "Lato", sans-serif}
     <a class="fa fa-home w3-hover-opacity w3-margin-top" style="font-size:30px;color:white"></a>
  </div>
 </div>
-
 
 <div  id="my" class="sidenav">
   <div class="vertical-center" style="text-align:center;" >
@@ -142,17 +152,8 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
-
 <!-- Page content -->
 <div id="main" class="w3-content" style="max-width:2000px;margin-top:46px">
-
 
     <!--search-->
     <form class="w3-panel w3-margin-top" action="/action_page.php">
@@ -167,6 +168,7 @@ body {font-family: "Lato", sans-serif}
         <input class="w3-padding w3-margin-top" type="text" placeholder="Search for title, author, publication or ISBN" name="search" style="width:50%">
         <button class="w3-padding w3-purple w3-border-purple" type="submit"><i class="fa fa-search"></i></button>
     </form>
+
 
   <!--Image and descriptions-->
   <div class="w3-display-container w3-margin">
@@ -190,7 +192,7 @@ body {font-family: "Lato", sans-serif}
       </div>
   </div>
 
-   <!-- The Login Section -->
+    <!-- The Login Section -->
   <div id="login" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
       <header class="w3-container w3-black w3-center w3-padding-32">
@@ -205,8 +207,8 @@ body {font-family: "Lato", sans-serif}
         <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
         </label>
-<!--        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
         <button class="w3-button w3-block w3-black w3-padding-16 w3-section w3-right">LOGIN<i class="fa fa-check"></i></button>
+        <p>Not a member? <a href="#signup"  onclick="document.getElementById('signup').style.display='block';changeModel()" style="color:dodgerblue" >Sign Up</a></p>
       </div>
     </div>
   </div>
@@ -234,10 +236,6 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 
-
-
-
-
 <!-- End Page Content -->
 </div>
 
@@ -250,67 +248,45 @@ body {font-family: "Lato", sans-serif}
   <p class="w3-medium">Powered by <a href="https://github.com/MinakshiReddy/FlaskApp" target="_blank">Meenjas</a></p>
 </footer>
 </div>
-<script>
-document.getElementById("myBtn").addEventListener("click", open_close);
 
+
+<script>
+
+//menu button
+document.getElementById("myBtn").addEventListener("click", open_close);
 var menuState = 0 // close
 function open_close(x) {
-
   if(menuState === 0){
      menuState = 1;
-     	var step=260;
-          var x=document.getElementById('my').offsetLeft;
-      x= x+ step;
-      document.getElementById('my').style.left= x + "px";
+     var step=260;
+     var x=document.getElementById('my').offsetLeft;
+     x= x+ step;
+     document.getElementById('my').style.left= x + "px";
      document.getElementById("myBtn").classList.toggle("change");
   }
   else {
      menuState = 0;
-     	var step=260;
-        var x=document.getElementById('my').offsetLeft;
-      x= x - step;
-      document.getElementById('my').style.left= x + "px";
+     var step=260;
+     var x=document.getElementById('my').offsetLeft;
+     x= x - step;
+     document.getElementById('my').style.left= x + "px";
      document.getElementById("myBtn").classList.toggle("change");
   }
 }
 
-function move_img() {
 
+//show models
+function showBox(id){
+	document.getElementById(id).style.display='block';
 }
 
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 4000);
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
+//switch models
+function changeModel() {
+  var x = document.getElementById("login");
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-
-// Get the modal
-var modal = document.getElementById('login');
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+    x.style.display = "none";
   }
 }
 
