@@ -93,12 +93,6 @@ body {font-family: "Lato", sans-serif}
   color: #f1f1f1;
 }
 
-img.two {
-  height: 50%;
-  width: 50%;
-}
-
-
 .vl {
   border-right: 4px solid black;
   height: 230px;
@@ -120,15 +114,15 @@ img.two {
 <div class="main">
 
 <!-- header small screen-->
-<header class="w3-bar two w3-hide-large w3-hide-medium w3-metro-purple">
-  <img src="https://i.imgur.com/Wq4LUAs.png" href="/" class="w3-button w3-center w3-left" alt="Logo" width="130" height="60">
+<header class="w3-bar w3-hide-large w3-hide-medium w3-metro-purple">
+  <a href="/"> <img src="https://i.imgur.com/Wq4LUAs.png" class="w3-left w3-center" alt="Logo" width="auto" height="40"></a>
   <p class="w3-margin-right w3-right w3-large fa fa-user w3-hover-opacity" style="cursor:pointer" onclick="showBox('login')"></p>
 </header>
 
 <!-- Top header -->
   <header class="w3-bar w3-padding-16 w3-center w3-hide-small w3-metro-purple">
-  	<img src="https://i.imgur.com/Wq4LUAs.png" href="/" class="w3-button w3-left" alt="Logo" width="auto" height="64">
-    <a class="w3-xxlarge">Central Library</a>
+  	<a href="/"> <img src="https://i.imgur.com/Wq4LUAs.png" class="w3-left" alt="Logo" width="auto" height="60"></a>
+    <a class="w3-xxlarge" style="margin-right:135px">Central Library</a>
     <p class="w3-right">
     	<a class="w3-large w3-margin-right w3-hover-opacity" style="cursor:pointer" onclick="showBox('login')">Login</a>
     </p>

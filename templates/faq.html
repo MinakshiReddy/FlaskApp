@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
 
 <style>
  body {font-family: "Lato", sans-serif}
@@ -91,6 +92,15 @@
   color: #f1f1f1;
 }
 
+.vl {
+  border-right: 4px solid black;
+  height: 230px;
+  position: absolute;
+  left: 52%;
+  margin-right:0px;
+  top: 30;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -99,61 +109,67 @@
 
 <div class="main">
 
-<div class="'w3-top w3-bar" style="float: top;">
-<h1 align="center"><i><u>FAQs</u></i></h1>
-</div>
+    <!--header big-->
+ <header class="w3-bar w3-padding-16 w3-center w3-hide-small w3-metro-purple">
+     <a href="/"> <img src="https://i.imgur.com/Wq4LUAs.png" class="w3-left" alt="Logo" width="auto" height="60"></a>
+    <a class="w3-xxlarge" style="margin-right:135px">FAQ</a>
+  </header>
 
-
+<!--header small-->
+    <header class="w3-bar w3-hide-large w3-hide-medium w3-metro-purple">
+        <p href="/" class="w3-large w3-margin-left fa fa-home w3-hover-opacity w3-center w3-left" style="cursor:pointer">
+        <h3 class="w3-xlarge" align="center">FAQ</h3>
+    </header>
 
 <div class="w3-container">
-  <div class="w3-panel w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn','dots','more')">
+  <div class="w3-panel w3-border-orange w3-leftbar w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn','dots','more')">
     <h3></h3>
         <p>What is Meenjas Bookclub?<button class="w3-teal w3-right w3-button w3-circle w3-hover-teal" id="myBtn" onclick="myFunction('myBtn','dots','more')">+</button><span id="dots"><p></span><span id="more">Meenjas Bookclub is an online library package for managing and lending out all types of Books in Library. It helps you to reserve books and taking books in Library</span></p>
     </div>
 
 
-  <div class="w3-panel w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn2','dots2','more2')">
+  <div class="w3-panel w3-border-orange w3-leftbar w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn2','dots2','more2')">
     <h3></h3>
         <p>Red often indicates a dangerous or negative situation.<button class="w3-teal w3-right w3-button w3-circle w3-hover-teal" id="myBtn2" onclick="myFunction('myBtn2','dots2','more2')">+</button><span id="dots2"><p></span><span id="more2">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
     </div>
-    
 
-    <div class="w3-panel w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn3','dots3','more3')">
+
+    <div class="w3-panel w3-border-orange w3-leftbar w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn3','dots3','more3')">
     <h3></h3>
         <p>Red often indicates a dangerous or negative situation.<button class="w3-teal w3-right w3-button w3-circle w3-hover-teal" id="myBtn3" onclick="myFunction('myBtn3','dots3','more3')">+</button><span id="dots3"><p></span><span id="more3">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
     </div>
 
-    <div class="w3-panel w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn4','dots4','more4')">
+    <div class="w3-panel w3-border-orange w3-leftbar w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn4','dots4','more4')">
     <h3></h3>
         <p>Red often indicates a dangerous or negative situation.<button class="w3-teal w3-right w3-button w3-circle w3-hover-teal" id="myBtn4" onclick="myFunction('myBtn4','dots4','more4')">+</button><span id="dots4"><p></span><span id="more4">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
     </div>
 
-    <div class="w3-panel w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn5','dots5','more5')">
+    <div class="w3-panel w3-border-orange w3-leftbar w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn5','dots5','more5')">
     <h3></h3>
         <p>Red often indicates a dangerous or negative situation.<button class="w3-teal w3-right w3-button w3-circle w3-hover-teal" id="myBtn5" onclick="myFunction('myBtn5','dots5','more5')">+</button><span id="dots5"><p></span><span id="more5">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
     </div>
 
-    <div class="w3-panel w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn6','dots6','more6')">
+    <div class="w3-panel w3-border-orange w3-leftbar w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn6','dots6','more6')">
     <h3></h3>
         <p>Red often indicates a dangerous or negative situation.<button class="w3-teal w3-right w3-button w3-circle w3-hover-teal" id="myBtn6" onclick="myFunction('myBtn6','dots6','more6')">+</button><span id="dots6"><p></span><span id="more6">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
     </div>
 
-    <div class="w3-panel w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn7','dots7','more7')">
+    <div class="w3-panel w3-border-orange w3-leftbar w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn7','dots7','more7')">
     <h3></h3>
         <p>Red often indicates a dangerous or negative situation.<button class="w3-teal w3-right w3-button w3-circle w3-hover-teal" id="myBtn7" onclick="myFunction('myBtn7','dots7','more7')">+</button><span id="dots7"><p></span><span id="more7">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
     </div>
 
-    <div class="w3-panel w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn8','dots8','more8')">
+    <div class="w3-panel w3-border-orange w3-leftbar w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn8','dots8','more8')">
     <h3></h3>
         <p>Red often indicates a dangerous or negative situation.<button class="w3-teal w3-right w3-button w3-circle w3-hover-teal" id="myBtn8" onclick="myFunction('myBtn8','dots8','more8')">+</button><span id="dots8"><p></span><span id="more8">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
     </div>
 
-    <div class="w3-panel w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn9','dots9','more9')">
+    <div class="w3-panel w3-border-orange w3-leftbar w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn9','dots9','more9')">
     <h3></h3>
         <p>Red often indicates a dangerous or negative situation.<button class="w3-teal w3-right w3-button w3-circle w3-hover-teal" id="myBtn9" onclick="myFunction('myBtn9','dots9','more9')">+</button><span id="dots9"><p></span><span id="more9">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
     </div>
 
-    <div class="w3-panel w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn10','dots10','more10')">
+    <div class="w3-panel w3-border-orange w3-leftbar w3-teal w3-card-4 w3-animate-right w3-margin w3-round-xlarge" onclick="myFunction('myBtn10','dots10','more10')">
     <h3></h3>
         <p>Red often indicates a dangerous or negative situation.<button class="w3-teal w3-right w3-button w3-circle w3-hover-teal" id="myBtn10" onclick="myFunction('myBtn10','dots10','more10')">+</button><span id="dots10"><p></span><span id="more10">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
     </div>
@@ -245,13 +261,42 @@ function myFunction(a,b,c) {
 
 
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <a href="https://www.facebook.com/profile.php?id=100009840944314" class="fa fa-facebook-official w3-hover-opacity"></a>
-  <a href="https://www.instagram.com/lady_of_her_principles/" class="fa fa-instagram w3-hover-opacity"></a>
-  <a href="https://www.linkedin.com/in/minakshi-b-1b9420b1/" class="fa fa-linkedin w3-hover-opacity"></a>
-  <a href="https://github.com/MinakshiReddy" class="fa fa-github w3-hover-opacity"></a>
-  <p class="w3-medium">Powered by <a href="https://github.com/MinakshiReddy/FlaskApp" target="_blank">Meenjas</a></p>
+<footer class="w3-container w3-padding-16 w3-lime" id="footer">
+    <div class="w3-row w3-padding-16">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+      <h3 class="w3-wide w3-center">CONTACT</h3>
+      <br>
+        <i class="fa fa-map-marker" style="width:30px"></i>Latur, IN<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 8237426286<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: meenjas@gmail.com<br>
+      </div>
+      <div class="vl w3-hide-small"></div>
+      <div class="w3-col m6">
+      <h3 class="w3-wide w3-center">DROP A NOTE!</h3>
+      <br>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding w3-margin-left" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <div class="w3-margin-left">
+          <input class="w3-input w3-border w3-right" type="text" placeholder="Message" required name="Message">
+          </div>
+            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+    <div class="w3-center w3-xlarge">
+      <a href="https://www.facebook.com/profile.php?id=100009840944314" class="fa fa-facebook-official w3-hover-opacity"></a>
+      <a href="https://www.instagram.com/lady_of_her_principles/" class="fa fa-instagram w3-hover-opacity"></a>
+      <a href="https://www.linkedin.com/in/minakshi-b-1b9420b1/" class="fa fa-linkedin w3-hover-opacity"></a>
+      <a href="https://github.com/MinakshiReddy" class="fa fa-github w3-hover-opacity"></a>
+      <p class="w3-medium">Powered by <a href="https://github.com/MinakshiReddy/FlaskApp" target="_blank">Meenjas</a></p>
+    </div>
 </footer>
 </div>
 </body>
