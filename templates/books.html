@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Books</title>
 </head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
 
 <style>
  body {font-family: "Lato", sans-serif}
@@ -26,6 +26,27 @@
   margin: 5px 0;
   margin-left:1px;
   transition: 0.4s;
+}
+
+.detail{
+    background-color: thistle;
+    color: black;
+    font-size: medium;
+    font-weight: 1000;
+}
+
+.heading{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 500;
+    color: khaki;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: teal;
+}
+
+.stick{
+    background-color: red;
 }
 
 .change .bar1 {
@@ -105,7 +126,92 @@
   .sidenav a {font-size: 18px;}
 }
 
+
+* {
+    box-sizing: border-box;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    width: 25%;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    float: left;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 4px;
+    margin-top: -50px;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: burlywood;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: #ccc;
+  }
+
+  /* Style the header: fixed position (always stay at the top) */
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 6px;
+    background: blueviolet;
+    width: 0%;
+  }
 </style>
+
 <body>
     <div class="main">
         <!--header big-->
@@ -117,8 +223,15 @@
         <!--header small-->
         <header class="w3-bar w3-hide-large w3-hide-medium w3-metro-purple">
             <p href="/" class="w3-large w3-margin-left fa fa-home w3-hover-opacity w3-center w3-left" style="cursor:pointer">
-            <h3 class="w3-xlarge" align="center">FAQ</h3>
+            <h3 class="w3-xlarge" align="center">BOOKS</h3>
         </header>
+
+        <!--Scroll Indicator-->
+        <div class="header">
+            <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
 
         <!-- Side Navbar always -->
         <div class="sidenav-always" >
@@ -148,32 +261,421 @@
             </div>
         </div>
 
-        <!-- First Photo Grid-->
-        <div class="w3-row-padding w3-padding-16" id="books">
-        <h2 style="margin-left: 5px;">Physics</h2>
-        <div class="w3-quarter w3-card">
-            <img src="https://i.imgur.com/C4hQjG7.jpg" alt="CoP" style="width:100%">
-            <h4><b>Concepts of Physics</b></h4>
-            <p>H. C. Verma<br>Bharati Publication</p>
 
+        <!-- Container for the C -->
+        <div class="w3-row w3-padding-16">
+            <H2 class="heading" >C</H2>
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/C/let_c.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Let Us C</b><br>Yashant Kanetkar</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/C/c_prog_lang.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft stick">Few left</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>C Programming Language</b><br>Darrel L. Graham</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/C/hard_way.png" style="width:100%">
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Learn C The Hard way</b><br>Zed A. Shaw</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/C/beg_c.png" style="width:100%">
+                    
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Beginning C</b><br>Ivor Horton</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/C/hea_first.png" style="width:100%">
+                    
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Head First C</b><br>David Griffits</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/C/c_tut.png" style="width:100%">
+                    
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>C Programming Tutorial</b><br>Mark Burgess</p>
+                </div>     
+            </div>
         </div>
-        <div class="w3-quarter w3-card">
-            <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
-            <h3>Let Me Tell You About This Steak</h3>
-            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        
+
+        <!-- Container for the Cpp -->
+        <div class="w3-row w3-padding-16">
+            <H2 class="heading" >C++</H2>
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/cpp/1.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>The Tour of C++</b><br>Bjarne Stroustrup</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/cpp/2.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Modern C++ Program...</b><br>Marius Bancila</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/cpp/3.png" style="width:100%">
+                
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Jumping into C++</b><br>Alex Allain</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/cpp/4.png" style="width:100%">
+                    
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Let Us C++</b><br>Yashant Kanetkar</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/cpp/5.png" style="width:100%">
+                    
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Computer Science wit..</b><br>YSumitra Arora</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/cpp/6.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Effective Modern C++</b><br>Scott Meyers</p>
+                </div>     
+            </div>
         </div>
-        <div class="w3-quarter w3-card">
-            <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
-            <h3>Cherries, interrupted</h3>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            <p>What else?</p>
+
+
+        <!-- Container for the java -->
+        <div class="w3-row w3-padding-16">
+            <H2 class="heading" >JAVA</H2>
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/java/comp_ref.png" style="width:100%">
+                    <span class="w3-tag stick w3-display-topleft">3 Left!</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Java: The Complete Ref...</b><br>Herbert Schildt</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/java/core_java.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">Latest Edition</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Core Java</b><br>Rashmi Kanta Das</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/java/think_java.png" style="width:100%">
+                    
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Think Java</b><br>Allen B. Downey</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/java/textbook_java.png" style="width:100%">
+                    
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>A textbook of Java Prog...</b><br>Surbhi Kakkar</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/java/head_java.png" style="width:100%">
+                   
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Head First Java</b><br>Kathy Sierra</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/java/java_prog.png" style="width:100%">
+                    
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Java Programming The ..</b><br>Keshav Patel</p>
+                </div>     
+            </div>
         </div>
-        <div class="w3-quarter w3-card">
-            <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
-            <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+
+
+        <!-- Container for the python -->
+        <div class="w3-row w3-padding-16">
+            <H2 class="heading" >Python</H2>
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/python/crash.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Python Crash Course</b><br>Eric Matthes</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/python/2.png" style="width:100%">
+                    
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>The Python Book</b><br>Various authors</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/python/3.png" style="width:100%">
+                    
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Programming Python</b><br>Mark Lutz</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/python/4.png" style="width:100%">
+                    
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Python Tricks The Book</b><br>Dan Bader</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/python/5.png" style="width:100%">
+                   
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Learn Python The Hard..</b><br>Zed A. Shaw</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/python/6.png" style="width:100%">
+                    <span class="w3-tag stick w3-display-topleft">Only 1 left!</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Automate The Boring St..</b><br>Al Sweigart/p>
+                </div>     
+            </div>
         </div>
+
+
+        <!-- Container for the E-books -->
+        <div class="w3-row w3-padding-16">
+            <H2 class="heading" >E-Books</H2>
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/ebook/let_C.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Let Us C</b><br>Yashant Kanetkar</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/ebook/java.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Programming with Java</b><br>E Balagurusamy</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/ebook/javacore.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Java Web Services</b><br>Martin Kalim</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/ebook/gate.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Gate 2019</b><br>Unknown</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/ebook/cpp.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>C++ Programming</b><br>John Bach</p>
+                </div>     
+            </div>
+
+            <div class="w3-col l2 s4">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                    <img src="/images/ebook/black_hat.png" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button detail">DETAILS</button>
+                    </div>
+                    </div>
+                    <p style="font-size: 18px;"><b>Black Hat Python</b><br>Justin Seitz</p>
+                </div>     
+            </div>
         </div>
+        
+
 
         <!-- Footer -->
         <footer class="w3-container w3-padding-16 w3-lime" id="footer">
@@ -217,45 +719,63 @@
 </body>
 
 <script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    //menu button
-    document.getElementById("myBtn").addEventListener("click", open_close);
-    var menuState = 0 // close
-    function open_close(x) {
-      if(menuState === 0){
-         menuState = 1;
-         var step=260;
-         var x=document.getElementById('my').offsetLeft;
-         x= x+ step;
-         document.getElementById('my').style.left= x + "px";
-         document.getElementById("myBtn").classList.toggle("change");
-      }
-      else {
-         menuState = 0;
-         var step=260;
-         var x=document.getElementById('my').offsetLeft;
-         x= x - step;
-         document.getElementById('my').style.left= x + "px";
-         document.getElementById("myBtn").classList.toggle("change");
-      }
-    }
-    
-    
-    //show models
-    function showBox(id){
-        document.getElementById(id).style.display='block';
-    }
-    
-    //switch models
-    function changeModel() {
-      var x = document.getElementById("login");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-    
-    </script>
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex+=n);
+}
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+//menu button
+document.getElementById("myBtn").addEventListener("click", open_close);
+var menuState = 0 // close
+function open_close(x) {
+  if(menuState === 0){
+     menuState = 1;
+     var step=260;
+     var x=document.getElementById('my').offsetLeft;
+     x= x+ step;
+     document.getElementById('my').style.left= x + "px";
+     document.getElementById("myBtn").classList.toggle("change");
+  }
+  else {
+     menuState = 0;
+     var step=260;
+     var x=document.getElementById('my').offsetLeft;
+     x= x - step;
+     document.getElementById('my').style.left= x + "px";
+     document.getElementById("myBtn").classList.toggle("change");
+  }
+}
+
+
+//show models
+function showBox(id){
+    document.getElementById(id).style.display='block';
+}
+
+//switch models
+function changeModel() {
+  var x = document.getElementById("login");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
     
 </html>

@@ -21,5 +21,9 @@ def login():
 def faq():
     return render_template('faq.html')
 
+@app.route("/books")
+def books():
+    return render_template('books.html')
+
 if __name__ == "__main__":
     app.run()
