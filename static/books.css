@@ -1,0 +1,211 @@
+
+<style>
+body {font-family: "Lato", sans-serif}
+.w3-myfont { font-family: "Comic Sans MS", cursive, sans-serif;}
+.w3-new{ font-family: "Playfair Display";}
+
+.main { margin-left: 60px;/* Same as the width of the sidenav */ }
+
+.bar1, .bar2, .bar3
+{
+ width: 25px;
+ height: 4px;
+ background-color: white;
+ margin: 5px 0;
+ margin-left:1px;
+ transition: 0.4s;
+}
+
+.detail{
+   background-color: thistle;
+   color: black;
+   font-size: medium;
+   font-weight: 1000;
+}
+
+.heading{
+   font-size: xx-large;
+   text-align: center;
+   font-weight: 500;
+   color: khaki;
+   margin-bottom: 20px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   background-color: teal;
+}
+
+.stick{
+   background-color: red;
+}
+
+.change .bar1 {
+ transform: rotate(-405deg) translate(-6.2px, 6.2px);
+}
+
+.change .bar2 {opacity: 0;transition:0.4s;}
+
+.change .bar3 {
+ transform: rotate(405deg) translate(-6.2px, -6.2px);
+}
+.sidenav-always {
+ height: 100%;
+ width: 60px;
+ position: fixed;
+ z-index: 5;
+ top: 0;
+ left: 0;
+ background-color: Teal ;
+ overflow-x: hidden;
+ transition: 0.5s;
+ padding-top: 0px;
+}
+
+.sidenav .closebtn {
+ position: absolute;
+ top: 0;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 50px;
+}
+
+
+.vertical-center {
+ margin: 15px;
+ position: absolute;
+ top: 50%;
+ -ms-transform: translateY(-50%);
+ transform: translateY(-50%);
+}
+
+.sidenav {
+ height: 100%;
+ width: 230px;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ left: -200px;
+ background-color:IndianRed;
+ overflow-x: hidden;
+ padding-top: 0px;
+ transition: 0.5s;
+}
+
+.sidenav a {
+ padding: 6px 6px 6px 32px;
+ text-decoration: none;
+ font-size: 25px;
+ color: white;
+ display: block;
+}
+
+.sidenav a:hover {
+ color: #f1f1f1;
+}
+
+.vl {
+ border-right: 4px solid black;
+ height: 230px;
+ position: absolute;
+ left: 52%;
+ margin-right:0px;
+ top: 30;
+}
+
+
+* {
+   box-sizing: border-box;
+ }
+
+ /* Position the image container (needed to position the left and right arrows) */
+ .container {
+   position: relative;
+   width: 25%;
+ }
+
+ /* Hide the images by default */
+ .mySlides {
+   display: none;
+   float: left;
+ }
+
+ .column {
+   float: left;
+   width: 25%;
+ }
+
+ /* Add a pointer when hovering over the thumbnail images */
+ .cursor {
+   cursor: pointer;
+ }
+
+ /* Next & previous buttons */
+ .prev,
+ .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 4px;
+   margin-top: -50px;
+   color: rgb(0, 0, 0);
+   z-index: 1;
+   font-weight: bold;
+   font-size: 20px;
+   border-radius: 3px 3px 3px 3px;
+   user-select: none;
+   -webkit-user-select: none;
+ }
+
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover,
+ .next:hover {
+   background-color: burlywood;
+ }
+
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ /* The progress container (grey background) */
+ .progress-container {
+   width: 100%;
+   height: 6px;
+   background: #ccc;
+ }
+
+ /* Style the header: fixed position (always stay at the top) */
+ .header {
+   position: fixed;
+   top: 0;
+   z-index: 1;
+   width: 100%;
+   background-color: #f1f1f1;
+ }
+
+ /* The progress bar (scroll indicator) */
+ .progress-bar {
+   height: 6px;
+   background: blueviolet;
+   width: 0%;
+ }
+
+ 
+@media screen and (max-height: 450px) {
+ .sidenav {padding-top: 15px;}
+ .sidenav a {font-size: 18px;}
+}
+
+.overflow {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   resize: horizontal;
+}
+
+</style>

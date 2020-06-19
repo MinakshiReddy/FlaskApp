@@ -7,211 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
-
-<style>
- body {font-family: "Lato", sans-serif}
-.w3-myfont { font-family: "Comic Sans MS", cursive, sans-serif;}
-.w3-new{ font-family: "Playfair Display";}
-
-.main { margin-left: 60px;/* Same as the width of the sidenav */ }
-
-.bar1, .bar2, .bar3
-{
-  width: 25px;
-  height: 4px;
-  background-color: white;
-  margin: 5px 0;
-  margin-left:1px;
-  transition: 0.4s;
-}
-
-.detail{
-    background-color: thistle;
-    color: black;
-    font-size: medium;
-    font-weight: 1000;
-}
-
-.heading{
-    font-size: xx-large;
-    text-align: center;
-    font-weight: 500;
-    color: khaki;
-    margin-bottom: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: teal;
-}
-
-.stick{
-    background-color: red;
-}
-
-.change .bar1 {
-  transform: rotate(-405deg) translate(-6.2px, 6.2px);
-}
-
-.change .bar2 {opacity: 0;transition:0.4s;}
-
-.change .bar3 {
-  transform: rotate(405deg) translate(-6.2px, -6.2px);
-}
-.sidenav-always {
-  height: 100%;
-  width: 60px;
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  background-color: Teal ;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 0px;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-
-.vertical-center {
-  margin: 15px;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.sidenav {
-  height: 100%;
-  width: 230px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -200px;
-  background-color:IndianRed;
-  overflow-x: hidden;
-  padding-top: 0px;
-  transition: 0.5s;
-}
-
-.sidenav a {
-  padding: 6px 6px 6px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.vl {
-  border-right: 4px solid black;
-  height: 230px;
-  position: absolute;
-  left: 52%;
-  margin-right:0px;
-  top: 30;
-}
-
-
-
-* {
-    box-sizing: border-box;
-  }
-
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-    width: 25%;
-  }
-
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-    float: left;
-  }
-
-  .column {
-    float: left;
-    width: 25%;
-  }
-
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 4px;
-    margin-top: -50px;
-    color: rgb(0, 0, 0);
-    z-index: 1;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 3px 3px 3px 3px;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-  }
-
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: burlywood;
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  /* The progress container (grey background) */
-  .progress-container {
-    width: 100%;
-    height: 6px;
-    background: #ccc;
-  }
-
-  /* Style the header: fixed position (always stay at the top) */
-  .header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: #f1f1f1;
-  }
-
-  /* The progress bar (scroll indicator) */
-  .progress-bar {
-    height: 6px;
-    background: blueviolet;
-    width: 0%;
-  }
-
-  
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-</style>
+<link rel="stylesheet" href="/static/books.css">
 
 <body>
     <div class="main">
@@ -224,7 +20,7 @@
         <!--header small-->
         <header class="w3-bar w3-hide-large w3-hide-medium w3-metro-purple">
             <p href="/" class="w3-large w3-margin-left fa fa-home w3-hover-opacity w3-center w3-left" style="cursor:pointer">
-            <h3 class="w3-xlarge" >BOOKS</h3>
+            <h3 class="w3-xlarge" align="center">BOOKS</h3>
         </header>
 
         <!--Scroll Indicator-->
@@ -275,7 +71,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Let Us C</b><br>Yashant Kanetkar</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Let Us C</b><br>Yashant Kanetkar</p>
                 </div>     
             </div>
 
@@ -288,7 +84,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>C Programming </b><br>Darrel L. Graham</p>
+                    <p class="overflow" style="font-size: 18px;"><b>C Programming Language</b><br>Darrel L. Graham</p>
                 </div>     
             </div>
 
@@ -300,7 +96,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Learn C The Hard way</b><br>Zed A. Shaw</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Learn C The Hard Way</b><br>Zed A. Shaw</p>
                 </div>     
             </div>
 
@@ -313,7 +109,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Beginning C</b><br>Ivor Horton</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Beginning C</b><br>Ivor Horton</p>
                 </div>     
             </div>
 
@@ -326,7 +122,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Head First C</b><br>David Griffits</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Head First C</b><br>David Griffiths, Dawn Griffiths</p>
                 </div>     
             </div>
 
@@ -339,7 +135,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>C Programming Tutorial</b><br>Mark Burgess</p>
+                    <p class="overflow" style="font-size: 18px;"><b>C Programming Tutorial</b><br>Mark Burgess</p>
                 </div>     
             </div>
         </div>
@@ -357,7 +153,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>The Tour of C++</b><br>Bjarne Stroustrup</p>
+                    <p class="overflow" style="font-size: 18px;"><b>The Tour of C++</b><br>Bjarne Stroustrup</p>
                 </div>     
             </div>
 
@@ -370,7 +166,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Modern C++ Program...</b><br>Marius Bancila</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Modern C++ Programming Cookbook</b><br>Marius Bancila</p>
                 </div>     
             </div>
 
@@ -383,7 +179,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Jumping into C++</b><br>Alex Allain</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Jumping into C++</b><br>Alex Allain</p>
                 </div>     
             </div>
 
@@ -396,7 +192,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Let Us C++</b><br>Yashant Kanetkar</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Let Us C++</b><br>Yashant Kanetkar</p>
                 </div>     
             </div>
 
@@ -409,7 +205,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Computer Science wit..</b><br>YSumitra Arora</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Computer Science with C++</b><br>Sumitra Arora</p>
                 </div>     
             </div>
 
@@ -422,7 +218,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Effective Modern C++</b><br>Scott Meyers</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Effective Modern C++</b><br>Scott Meyers</p>
                 </div>     
             </div>
         </div>
@@ -440,7 +236,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Java: The Complete Ref...</b><br>Herbert Schildt</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Java: The Complete Reference</b><br>Herbert Schildt</p>
                 </div>     
             </div>
 
@@ -453,7 +249,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Core Java</b><br>Rashmi Kanta Das</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Core Java</b><br>Rashmi Kanta Das</p>
                 </div>     
             </div>
 
@@ -466,7 +262,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Think Java</b><br>Allen B. Downey, Chris Mayfield</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Think Java</b><br>Allen B. Downey & Chris Mayfield</p>
                 </div>     
             </div>
 
@@ -479,7 +275,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>A textbook of Java Progr..</b><br>Surbhi Kakkar</p>
+                    <p class="overflow" style="font-size: 18px;"><b>A textbook of Java Programming</b><br>Surbhi Kakkar</p>
                 </div>     
             </div>
 
@@ -492,7 +288,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Head First Java</b><br>Kathy Sierra</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Head First Java</b><br>Kathy Sierra & Bert Bates</p>
                 </div>     
             </div>
 
@@ -505,7 +301,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Java Programming The ..</b><br>Keshav Patel</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Java Programming The Beginning Beginner's Guide</b><br>Keshav Patel</p>
                 </div>     
             </div>
         </div>
@@ -523,7 +319,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Python Crash Course</b><br>Eric Matthes</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Python Crash Course</b><br>Eric Matthes</p>
                 </div>     
             </div>
 
@@ -536,7 +332,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>The Python Book</b><br>Various authors</p>
+                    <p class="overflow" style="font-size: 18px;"><b>The Python Book</b><br>Various authors</p>
                 </div>     
             </div>
 
@@ -549,7 +345,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Programming Python</b><br>Mark Lutz</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Programming Python</b><br>Mark Lutz</p>
                 </div>     
             </div>
 
@@ -562,7 +358,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Python Tricks The Book</b><br>Dan Bader</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Python Tricks The Book</b><br>Dan Bader</p>
                 </div>     
             </div>
 
@@ -575,7 +371,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Learn Python The Hard..</b><br>Zed A. Shaw</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Learn Python The Hard Way</b><br>Zed A. Shaw</p>
                 </div>     
             </div>
 
@@ -588,7 +384,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Automate The Boring St..</b><br>Al Sweigart/p>
+                    <p class="overflow" style="font-size: 18px;"><b>Automate The Boring Stuff with Python</b><br>Al Sweigart</p>
                 </div>     
             </div>
         </div>
@@ -606,7 +402,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Let Us C</b><br>Yashant Kanetkar</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Let Us C</b><br>Yashant Kanetkar</p>
                 </div>     
             </div>
 
@@ -619,7 +415,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Programming with Java</b><br>E Balagurusamy</p>
+                    <p class="overflow" style="font-size: 18px; "><b>Programming with Java A Primer</b><br>E Balagurusamy</p>
                 </div>     
             </div>
 
@@ -632,7 +428,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Java Web Services</b><br>Martin Kalim</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Java Web Services: Up and Running</b><br>Martin Kalim</p>
                 </div>     
             </div>
 
@@ -645,7 +441,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Gate 2019</b><br>Unknown</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Gate 2019: Computer Science and IT</b><br>Unknown</p>
                 </div>     
             </div>
 
@@ -658,7 +454,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>C++ Programming</b><br>John Bach</p>
+                    <p class="overflow" style="font-size: 18px;"><b>C++ Programming</b><br>John Bach</p>
                 </div>     
             </div>
 
@@ -671,7 +467,7 @@
                     <button class="w3-button detail">DETAILS</button>
                     </div>
                     </div>
-                    <p style="font-size: 18px;"><b>Black Hat Python</b><br>Justin Seitz</p>
+                    <p class="overflow" style="font-size: 18px;"><b>Black Hat Python</b><br>Justin Seitz</p>
                 </div>     
             </div>
         </div>
@@ -719,56 +515,6 @@
     </div>
 </body>
 
-<script>
-
-//menu button
-document.getElementById("myBtn").addEventListener("click", open_close);
-var menuState = 0 // close
-function open_close(x) {
-  if(menuState === 0){
-     menuState = 1;
-     var step=260;
-     var x=document.getElementById('my').offsetLeft;
-     x= x+ step;
-     document.getElementById('my').style.left= x + "px";
-     document.getElementById("myBtn").classList.toggle("change");
-  }
-  else {
-     menuState = 0;
-     var step=260;
-     var x=document.getElementById('my').offsetLeft;
-     x= x - step;
-     document.getElementById('my').style.left= x + "px";
-     document.getElementById("myBtn").classList.toggle("change");
-  }
-}
-
-
-//show models
-function showBox(id){
-    document.getElementById(id).style.display='block';
-}
-
-//switch models
-function changeModel() {
-  var x = document.getElementById("login");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-
-//Scroll indicator
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar2").style.width = scrolled + "%";
-}
-</script>
+<script src="/static/books.js" type="text/javascript"></script> 
     
 </html>
